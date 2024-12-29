@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import ImagePopup from '../components/image/ImagePopup';
 import Earthquakes from '../components/volcano/EarthquakesDynamic';
-import { set } from 'mongoose';
 
 interface Volcano {
   _id: string;

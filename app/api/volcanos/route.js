@@ -2,6 +2,7 @@ import { connectToDatabase } from '@/lib/mongodb';
 import Volcano from '@/models/volcano';
 
 export async function GET(request) {
+  console.log('request: ', request)
   try {
     // Connect to the database
     await connectToDatabase();

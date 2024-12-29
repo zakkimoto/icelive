@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import YouTubeHorizontalScroll from './components/player/YouTubeHorizontalScroll';
 import Earthquakes from './components/volcano/Earthquakes';
 
