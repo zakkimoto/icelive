@@ -15,6 +15,7 @@ const VolcanoSchema = new mongoose.Schema(
         titleText: String,
       },
     ],
+    oroi: { type: String },
   },
   {
     collection: 'Volcanos', // Explicitly match the collection name in your database

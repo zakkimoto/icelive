@@ -15,6 +15,7 @@ interface Volcano {
     imageSrc: string;
     titleText: string;
   }[];
+  oroi: string;
 }
 
 export default function VolcanoForecast() {
@@ -44,9 +45,6 @@ export default function VolcanoForecast() {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>Welcome to IceLive</h1>
-
-      {/* Display Aviation Codes */}
       <div>
         <ImagePopup
           placeholderSrc={'https://www.vedur.is/photos/volcanoes/volcano_status.png'}
@@ -59,6 +57,7 @@ export default function VolcanoForecast() {
       {/* Volcano Selection Dropdown */}
       {selectedVolcano && (
         <div>
+          
           <div style={{ textAlign: 'center', margin: '1rem 0' }}>
             <label htmlFor="volcano-select" style={{ marginRight: '0.5rem', fontWeight: 'bold' }}>
               Select a Volcano:
@@ -92,6 +91,9 @@ export default function VolcanoForecast() {
           )}
 
           {/* Display Images */}
+          { selectedVolcano?.oroi && (
+            <iframe src={selectedVolcano.oroi} title="Selected Volcano Link" width="640px" height="480px" />
+          )}
           <div
             style={{
               display: 'flex',
